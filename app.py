@@ -9,7 +9,7 @@ from faster_whisper import WhisperModel
 # --- 1. Load the High-Accuracy Model ---
 print("Loading 'medium.en' model... This will be fast on Render's server.")
 # This 1.5GB model will give you the high accuracy you want
-model = WhisperModel("medium.en", device="cpu", compute_type="int8_float32")
+model = WhisperModel("base.en", device="cpu", compute_type="int8_float32")
 print("Model loaded. Server is ready.")
 
 # --- 2. Initialize the FastAPI Server ---
